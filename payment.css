@@ -1,0 +1,70 @@
+body {
+  font-family: Verdana;
+  margin: 0 auto;
+  padding: 0;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+/* Header Styles */
+.banner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Navigation Styles */
+
+nav.NavigationSection li {
+   position: relative;
+   display: block; 
+   float: left;   
+   width: 32%;     
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: rgb(255, 58, 16);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+}
+/* Membership Form Styles */
+.membership-section {
+  background-color: white;
+  padding: 3em;
+  border-radius: 10px;
+  font-size: 10px; /* You can adjust this value to make the text smaller */
+  text-align: center;
+  color: green; 
+  margin-top: 70px;
+}
+
+

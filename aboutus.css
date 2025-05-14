@@ -1,0 +1,140 @@
+body {
+  font-family: Verdana;
+  margin: 0 auto;
+  padding: 0;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+/* Header Styles */
+.banner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Navigation Styles */
+
+nav.NavigationSection li {
+   position: relative;
+   display: block; 
+   float: left;   
+   width: 32%;     
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: rgb(255, 58, 16);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav a.active {
+  background-color:rgb(255, 58, 16);
+  color: white;
+  border-radius: 4px;
+}
+
+/* Main Content Styles */
+main {
+  padding: 2em;
+  Margin-top: 50px;
+  Text-transform: uppercase;
+}
+
+/* JoinUs Section Layout */
+.joinus-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 3em;
+  padding: 2em;
+  background-color: #000;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Text on the left */
+.joinus-text {
+  flex: 1;
+  max-width: 45%;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-left: 100px;
+  text-transform: none;
+  font-family: 'Lucida Console' , monospace;
+}
+
+/* Adjust slideshow position */
+.slideshow {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+  height: 400px;
+  margin: 0;
+  Margin-right: 400px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 8px;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/*Map Styling*\
+.map-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.map-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 4px solid #ff3a10;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+/* Footer Styles */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}

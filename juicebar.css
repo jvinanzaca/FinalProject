@@ -1,0 +1,164 @@
+body {
+  font-family: Verdana;
+  margin: 0 auto;
+  padding: 0;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+/* Header Styles */
+.banner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Navigation Styles */
+
+nav.NavigationSection {
+  padding-left: 25px; /* Adjust the value as needed */
+}
+
+nav.NavigationSection li {
+   position: relative;
+   display: block; 
+   float: left;   
+   width: 32%;     
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: rgb(255, 58, 16);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav a.active {
+  background-color: rgb(255, 58, 16);
+  color: white;
+  border-radius: 4px;
+}
+
+
+/* Juice Bar Menu Styles */
+
+
+
+h1, h2, h3 {
+  font-family: 'Lucida Console', monospace;
+  font-size: 1.8em;
+  background: rgb(250, 130, 156);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+
+
+
+/* Apply Lucida Console font to the juice bar menu only */
+.menu-items {
+  font-family: 'Lucida Console', monospace; 
+}
+
+/* Style for the whole menu */
+.menu-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: rgb(112, 112, 112); /* Dark background to complement the black theme */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow to add depth */
+}
+
+/* Style for each menu item */
+.menu-items li {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgb(84, 84, 84); /* Darker background for each item */
+  color: white; /* White text color to contrast with the dark background */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for menu items */
+.menu-items li:hover {
+  transform: translateY(-5px); /* Lift the item slightly on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Style for the menu item container to align name and price */
+.menu-item {
+  display: flex;
+  justify-content: space-between; /* Aligns name on the left and price on the right */
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white; /* Light pinkish color for contrast */
+}
+
+/* Style for the item name */
+.item-name {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #f76b8a; /* A vibrant color for the name */
+  text-transform: uppercase;
+}
+
+/* Style for the item price */
+.item-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffb74d; /* A golden yellow color for the price */
+}
+
+/* Style for ingredients text (smaller and italicized) */
+.item-ingredients {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #ddd; /* Lighter gray for ingredients text */
+  margin-top: 5px;
+}
+
+/* Remove border for the last item */
+.menu-items li:last-child {
+  border-bottom: none;
+}
+
+/* Add a colorful border to the menu items */
+.menu-items li {
+  border-left: 4px solid #ff6b6b; /* Vibrant pink border on the left */
+  padding-left: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
